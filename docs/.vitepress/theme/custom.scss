@@ -1,0 +1,16 @@
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    #f0eff0,
+    #41d1ff
+  );
+  --search-text-color: #000;
+  --vp-c-text-1: #1658e4;
+  --vp-c-text-2: #577ac7;
+}
+:root.dark {
+  --search-text-color: #fff;
+  --vp-c-text-1: #fff;
+  --vp-c-text-2: #fff;
+}
