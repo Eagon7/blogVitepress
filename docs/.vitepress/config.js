@@ -63,7 +63,7 @@ module.exports = {
         },
       ],
     },
-    socialLinks: [{ icon: "github", link: "https://github.com/aiai0603" }], //右上角的社交标签，支持多种icon，具体可以查询官网，反正没有QQ和微信，放个git差不多意思意思就行了
+    socialLinks: [{ icon: "github", link: "https://github.com/eagon7" }], //右上角的社交标签，支持多种icon，具体可以查询官网，反正没有QQ和微信，放个git差不多意思意思就行了
   },
   // clientAppEnhanceFiles: [
   //   // 导入插件样式
