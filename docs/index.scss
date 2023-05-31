@@ -1,5 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .Layout:has(.VPHome) {
   background-image: url('./public/cover@xl.webp');
+                
   background-repeat: no-repeat;
   background-size:  100% ;
 }

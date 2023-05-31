@@ -9,19 +9,23 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/what-is-vitepress
+      link: /articles/basic/
     - theme: alt
-      text: View on GitHub
-      link: https://github.com/vuejs/vitepress
+      text: View on Resume
+      link: /Resume/
 
 ---
 <script setup>
 import home from './.vitepress/components/home.vue'
+import githubCalendat from './.vitepress/components/githubCalendar/index.vue'
 </script>
 
 <home />
+<githubCalendat/>
 
 <style lang="scss">
+
 @import './index.scss';
 @import './.vitepress/theme/custom.scss';
+
 </style>

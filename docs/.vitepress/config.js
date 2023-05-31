@@ -1,6 +1,6 @@
 module.exports = {
   title: "Eagon Home",
-  description: "",
+  description: "https://github.com/Eagon7/Nest-base-drill",
   themeConfig: {
     // lang: "en-US",
     siteTitle: "Eagon", //左上角的
