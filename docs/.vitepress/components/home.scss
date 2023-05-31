@@ -16,17 +16,16 @@ body {
   background-color: #eff0f4;
 }
 
-.container {
+.containers {
   position: relative;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  padding: 50px 0;
   gap: 40px 60px;
 }
 
-.container .drop {
+.containers .drop {
   position: relative;
   width: 350px;
   height: 350px;
@@ -38,20 +37,20 @@ body {
   align-items: center;
   justify-content: center;
 }
-.container .drop:nth-child(1) {
+.containers .drop:nth-child(1) {
   border-radius: 57% 43% 43% 57% / 43% 43% 57% 57%;
 }
-.container .drop:nth-child(2) {
+.containers .drop:nth-child(2) {
   border-radius: 73% 27% 59% 41% / 57% 59% 41% 43%;
 }
-.container .drop:nth-child(3) {
+.containers .drop:nth-child(3) {
   border-radius: 35% 65% 31% 69% / 57% 59% 41% 43%;
 }
-.container .drop:hover {
+.containers .drop:hover {
   border-radius: 50%;
 }
 
-.container .drop .content {
+.containers .drop .content {
   cursor: pointer;
   position: relative;
   display: flex;
@@ -62,7 +61,7 @@ body {
   padding: 40px;
   gap: 15px;
 }
-.container .drop .content h2 {
+.containers .drop .content h2 {
   position: relative;
   width: 80px;
   height: 80px;
@@ -77,7 +76,7 @@ body {
   font-size: 2em;
   color: var(--clr);
 }
-.container .drop .content a {
+.containers .drop .content a {
   position: relative;
   padding: 10px 25px;
   background-color: var(--clr);
@@ -89,11 +88,11 @@ body {
   opacity: 0.75;
   transition: 0.5s;
 }
-.container .drop .content a:hover {
+.containers .drop .content a:hover {
   opacity: 1;
 }
 
-.container .drop .content a::before {
+.containers .drop .content a::before {
   content: "";
   position: absolute;
   left: 50%;

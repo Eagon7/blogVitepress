@@ -17,27 +17,29 @@ const svg = `
 `;
 </script>
 <template>
-  <div class="container">
-    <div class="drop" style="--clr: #ff0f5b">
-      <div class="content">
-        <h2 v-html="svg"></h2>
-        <p style="font-weight: 800">NEST</p>
-        <a href="#"></a>
+  <div>
+    <div class="containers">
+      <div class="drop" style="--clr: #ff0f5b">
+        <div class="content">
+          <h2 v-html="svg"></h2>
+          <p style="font-weight: 800">NEST</p>
+          <a href="#"></a>
+        </div>
       </div>
-    </div>
-    <div class="drop" style="--clr: #be01fe">
-      <div class="content">
-        <keji />
-        <!-- <h2 v-html="svg"></h2>
+      <div class="drop" style="--clr: #be01fe">
+        <div class="content">
+          <keji />
+          <!-- <h2 v-html="svg"></h2>
         <p style="font-weight: 800">NEST</p>
         <a href="#"></a> -->
+        </div>
       </div>
-    </div>
-    <div class="drop" style="--clr: #01b4ff">
-      <div class="content">
-        <h2 v-html="svg"></h2>
-        <p style="font-weight: 800">VUE</p>
-        <a href="#"></a>
+      <div class="drop" style="--clr: #01b4ff">
+        <div class="content">
+          <h2 v-html="svg"></h2>
+          <p style="font-weight: 800">VUE</p>
+          <a href="#"></a>
+        </div>
       </div>
     </div>
   </div>
