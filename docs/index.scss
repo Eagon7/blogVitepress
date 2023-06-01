@@ -4,13 +4,11 @@
 
 .Layout:has(.VPHome) {
   background-image: url('./public/cover@xl.webp');
-                
   background-repeat: no-repeat;
+  background-position: 0px 70px;
   background-size:  100% ;
 }
-.Layout:has(.text) {
-  color: white;
-}
+
 .VPButton.brand{
   background-color: #076CF0 !important;
   color: white !important;
@@ -38,8 +36,26 @@
   width: 32px;
   height: 32px;
   border-radius: 4px;
-  background: transparent;
   transition: border-color 0.25s;
+  background: transparent;
+}
+
+@media (min-width:960px) {
+    .title,.VPNavBarMenuGroup>button>span,.VPNavBarMenuLink{
+    color: var(--vp-nav-color) !important;
+  }
+  .VPNavBar{
+    // border:0px !important;
+  }
+  .VPNavBar.fill{
+    // border:0px !important;
+  }
+  .VPNavBar.fill .content-body{
+    background-color:transparent !important;
+  } 
+  .VPHomeHero .text{
+    color:white !important;
+  }
 }
 
 @media (min-width: 768px) {
@@ -62,10 +78,9 @@
  .DocSearch-Button-Placeholder{
    color:var(--search-text-color)
  }
- .VPNavBar .fill{
-    background-color: #076CF0 !important;
- }
 }
+
+
 
 @media (max-width: 768px) {
   .DocSearch-Button-Keys {
