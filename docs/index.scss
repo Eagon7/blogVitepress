@@ -44,15 +44,7 @@
     .title,.VPNavBarMenuGroup>button>span,.VPNavBarMenuLink{
     color: var(--vp-nav-color) !important;
   }
-  .VPNavBar{
-    // border:0px !important;
-  }
-  .VPNavBar.fill{
-    // border:0px !important;
-  }
-  .VPNavBar.fill .content-body{
-    background-color:transparent !important;
-  } 
+
   .VPHomeHero .text{
     color:white !important;
   }
@@ -102,5 +94,6 @@
  }
 }
 .DocSearch-Button:hover {
-  background-color: #16168a;
+  background-color: #6f98ef7f;
+  transition: all 0.25s;
 }
