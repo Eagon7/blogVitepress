@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>多礼花喷射动画</title>
+  <style>
+    canvas {
+      background-color: #000;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="fireworks"></canvas>
+
+  <script>
+    const canvas = document.getElementById("fireworks");
+    const ctx = canvas.getContext("2d");
+
+    // 设置画布大小
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    // 礼花数组
+    let fireworks = [];
+
+    // 礼花类
+    class Firework {
+      constructor() {
+        this.x = Math.random() * canvas.width; // 初始 x 坐标
+        this.y = canvas.height; // 初始 y 坐标
+        this.width = Math.random() * 10 + 5; // 宽度
+        this.height = Math.random() * 80 + 10; // 高度
+        this.speed = Math.random() * 3 + 2; // 速度
+        this.angle = Math.random() * Math.PI * 2; // 角度
+        this.color = getRandomColor(); // 随机颜色
+        this.vx = Math.cos(this.angle) * this.speed; // x 方向速度分量
+        this.vy = Math.sin(this.angle) * this.speed; // y 方向速度分量
+        this.gravity = 0.05; // 重力加速度
+        this.opacity = 1; // 透明度
+      }
+
+      // 更新礼花位置
+      update() {
+        this.x += this.vx;
+        this.y -= this.vy;
+        this.vy -= this.gravity;
+        this.opacity -= 0.01;
+
+        if (this.opacity <= 0) {
+          fireworks = fireworks.filter((fw) => fw !== this); // 移除已消失的礼花
+        }
+      }
+
+      // 绘制礼花
+      draw() {
+        ctx.save();
+        ctx.translate(this.x, this.y);
+        ctx.rotate(-Math.PI / 4);
+        ctx.fillStyle = `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, ${this.opacity})`;
+        ctx.fillRect(0, 0, this.width, this.height);
+        ctx.restore();
+      }
+    }
+
+    // 随机颜色
+    function getRandomColor() {
+      return {
+        r: Math.floor(Math.random() * 256),
+        g: Math.floor(Math.random() * 256),
+        b: Math.floor(Math.random() * 256),
+      };
+    }
+
+    // 创建礼花
+    function createFirework() {
+      const count = Math.floor(Math.random() * 10) + 5; // 随机生成礼花数量
+      for (let i = 0; i < count; i++) {
+        fireworks.push(new Firework());
+      }
+    }
+
+    // 绘制画面
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      fireworks.forEach((fw) => {
+        fw.update();
+        fw.draw();
+      });
+
+      requestAnimationFrame(draw);
+    }
+
+    // 监听鼠标点击事件
+    canvas.addEventListener("click", createFirework);

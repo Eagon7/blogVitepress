@@ -19,7 +19,6 @@ hero:
 import home from './.vitepress/components/home.vue'
 import githubCalendat from './.vitepress/components/githubCalendar/index.vue'
 </script>
-
 <home />
 <githubCalendat/>
 
