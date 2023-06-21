@@ -19,10 +19,10 @@ module.exports = {
         text: "Nannan~",
         items: [{ text: "我们的故事", link: "/nannan/story/index" }],
       },
-      {
-        text: "Team",
-        link: "/team/index",
-      },
+      // {
+      //   text: "Team",
+      //   link: "/team/index",
+      // },
     ],
     sidebar: {
       "/articles/vue/first": [

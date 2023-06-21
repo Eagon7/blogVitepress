@@ -1,32 +1,3 @@
-<!-- <script setup lang="ts" name="team">
-import { VPTeamMembers } from "vitepress/theme";
-const members = [
-  {
-    avatar: "https://www.github.com/yyx990803.png",
-    name: "Evan You",
-    title: "Creator",
-    links: [
-      { icon: "github", link: "https://github.com/yyx990803" },
-      { icon: "twitter", link: "https://twitter.com/youyuxi" },
-    ],
-  },
-  {
-    avatar: "https://avatars.githubusercontent.com/u/84073969?v=4",
-    name: "冯凯超",
-    title: "http-typedi库作者",
-    links: [
-      { icon: "github", link: "https://fkc-alt.github.io/http-typedi/" },
-      { icon: "twitter", link: "" },
-    ],
-  },
-];
-</script>
-
-<template>
-  <VPTeamMembers size="small" :members="members" />
-</template>
-
-<style lang="scss" scoped></style> -->
 <script setup>
 import {
   VPTeamPage,
