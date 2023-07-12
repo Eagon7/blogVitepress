@@ -9,7 +9,7 @@ module.exports = {
     //   placement: "your-carbon-placement",
     // },
     siteTitle: "Eagon Ellington-", //左上角的名字
-    logo: "/prisma.png", //左上角的logo,注意：它的路径是从public文件夹开始的，所以这里引用的是public/logo.jpg这张图
+    logo: "/prisma.jpg", //左上角的logo,注意：它的路径是从public文件夹开始的，所以这里引用的是public/logo.jpg这张图
     nav: [
       //右上角的导航栏
       {
@@ -44,7 +44,7 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/articles/vue/first": [
+      "/articles/vue/": [
         {
           text: "设计理念", //标签名字
           collapsible: true, //是不是可以动态展开
@@ -72,9 +72,9 @@ module.exports = {
       ],
       "/articles/other2": [
         {
-          text: "侧边栏1", //标签名字
-          collapsible: true, //是不是可以动态展开
-          collapsed: true, //默认是不是展开
+          text: "侧边栏1", // 标签名字
+          collapsible: true, // 是不是可以动态展开
+          collapsed: true, // 默认是不是展开
           items: [
             {
               text: "index", //标签名字
