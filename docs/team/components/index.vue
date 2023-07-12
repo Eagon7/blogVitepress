@@ -20,7 +20,7 @@ const coreMembers = [
   {
     avatar: "https://avatars.githubusercontent.com/u/84073969?v=4",
     name: "冯凯超",
-    // title: "http-typedi库作者",
+    // title: "http-typedi开源库作者",
     links: [
       { icon: "github", link: "https://fkc-alt.github.io/http-typedi/" },
       { icon: "twitter", link: "" },
@@ -30,7 +30,7 @@ const coreMembers = [
   {
     avatar: "https://avatars.githubusercontent.com/u/100754700?v=4",
     name: "左右",
-    // title: "万能百宝箱左右哥",
+    // title: "前端基石",
     links: [
       { icon: "github", link: "https://github.com/chen-d-yu" },
       { icon: "twitter", link: "" },
@@ -74,15 +74,15 @@ const partners = [
       { icon: "twitter", link: "" },
     ],
   },
-  {
-    avatar: "https://avatars.githubusercontent.com/u/108128626?v=4",
-    name: "LibraCodeKingHyj",
-    title: "",
-    links: [
-      { icon: "github", link: "https://github.com/LibraCodeKingHyj" },
-      { icon: "twitter", link: "" },
-    ],
-  },
+  // {
+  //   avatar: "https://avatars.githubusercontent.com/u/108128626?v=4",
+  //   name: "LibraCodeKingHyj",
+  //   title: "",
+  //   links: [
+  //     { icon: "github", link: "https://github.com/LibraCodeKingHyj" },
+  //     { icon: "twitter", link: "" },
+  //   ],
+  // },
   // https://github.com/LibraCodeKingHyj
 ];
 </script>
@@ -96,7 +96,7 @@ const partners = [
       </VPTeamPageTitle>
       <VPTeamMembers size="medium" :members="coreMembers" />
       <VPTeamPageSection>
-        <template #title>后盾人基佬亲友团</template>
+        <template #title>后盾人</template>
         <template #lead>🪐感谢陪伴</template>
         <template #members>
           <VPTeamMembers size="small" :members="partners" />
@@ -105,3 +105,5 @@ const partners = [
     </VPTeamPage>
   </div>
 </template>
+
+<style></style>

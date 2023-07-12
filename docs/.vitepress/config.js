@@ -1,10 +1,15 @@
 module.exports = {
   title: "Eagon Home",
+  lastUpdated: true, // 文章最后更新时间
   description: "https://github.com/Eagon7/Nest-base-drill",
   themeConfig: {
     // lang: "en-US",
-    siteTitle: "Eagon", //左上角的
-    logo: "/logo.jpg", //左上角的logo,注意：它的路径是从public文件夹开始的，所以这里引用的是public/logo.jpg这张图
+    // carbonAds: {
+    //   code: "https://www.shengchanli.online/?contributor=1509583688302624",
+    //   placement: "your-carbon-placement",
+    // },
+    siteTitle: "Eagon Ellington-", //左上角的名字
+    logo: "/prisma.png", //左上角的logo,注意：它的路径是从public文件夹开始的，所以这里引用的是public/logo.jpg这张图
     nav: [
       //右上角的导航栏
       {
@@ -16,13 +21,27 @@ module.exports = {
         ],
       },
       {
+        text: "后端",
+        items: [{ text: "NestJs", link: "/articles/nestjs/index" }],
+      },
+      {
+        text: "算法",
+        items: [
+          { text: "前置知识", link: "/articles/algorithm/base/index" },
+          {
+            text: "算法积累笔记",
+            link: "/articles/algorithm/accumulate/index",
+          },
+        ],
+      },
+      {
+        text: "设计模式",
+        link: "/articles/designModel/index",
+      },
+      {
         text: "Nannan~",
         items: [{ text: "我们的故事", link: "/nannan/story/index" }],
       },
-      // {
-      //   text: "Team",
-      //   link: "/team/index",
-      // },
     ],
     sidebar: {
       "/articles/vue/first": [
@@ -34,6 +53,19 @@ module.exports = {
             {
               text: "发布订阅者模式", //标签名字
               link: "/articles/vue/first/model", //链接
+            },
+          ],
+        },
+      ],
+      "/articles/algorithm/base/index": [
+        {
+          text: "复杂度",
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              text: "时间复杂度",
+              link: "/articles/algorithm/base/time",
             },
           ],
         },
@@ -59,6 +91,19 @@ module.exports = {
           items: [
             {
               text: "index",
+            },
+          ],
+        },
+      ],
+      "/articles/nestjs/index": [
+        {
+          text: "设计思想",
+          // collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              text: "IoC DI",
+              link: "/articles/nestjs/IOCDI/index",
             },
           ],
         },

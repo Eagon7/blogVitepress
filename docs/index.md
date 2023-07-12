@@ -28,5 +28,5 @@ import team from './team/components/index.vue'
 
 @import './index.scss';
 @import './.vitepress/theme/custom.scss';
-
+@import './public/font.scss'
 </style>

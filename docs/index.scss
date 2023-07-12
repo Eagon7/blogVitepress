@@ -3,29 +3,28 @@
 @tailwind utilities;
 
 .Layout:has(.VPHome) {
-  background-image: url('./public/cover@xl.webp');
+  background-image: url("./public/cover@xl.webp");
   background-repeat: no-repeat;
   background-position: 0px 70px;
-  background-size:  100% ;
+  background-size: 100%;
 }
 
-.VPButton.brand{
-  background-color: #076CF0 !important;
+.VPButton.brand {
+  background-color: #076cf0 !important;
   color: white !important;
   border: 1px solid white !important;
 }
 
-.VPButton.alt{
-  background-color: #076CF0 !important;
+.VPButton.alt {
+  background-color: #076cf0 !important;
   color: white !important;
   border: 1px solid white !important;
 }
 
-.VPButton.medium{
+.VPButton.medium {
   border-radius: 4px !important;
   font-size: 20px;
 }
-
 
 .DocSearch-Button {
   display: flex;
@@ -40,13 +39,17 @@
   background: transparent;
 }
 
-@media (min-width:960px) {
-    .title,.VPNavBarMenuGroup>button>span,.VPNavBarMenuLink{
+@media (min-width: 960px) {
+  .title,
+  .VPNavBarMenuGroup > button > span,
+  .VPNavBarMenuLink {
     color: var(--vp-nav-color) !important;
   }
-
-  .VPHomeHero .text{
-    color:white !important;
+  .VPNavBarTitle {
+    font-family: "mFont";
+  }
+  .VPHomeHero .text {
+    color: white !important;
   }
 }
 
@@ -61,18 +64,16 @@
     background-color: var(--vp-c-bg-alt);
   }
   // 搜索框文字颜色
-  .DocSearch-Button-Keys{
-    color:var(--search-text-color)
+  .DocSearch-Button-Keys {
+    color: var(--search-text-color);
   }
-  .DocSearch-Search-Icon{
-    color:var(--search-text-color)
+  .DocSearch-Search-Icon {
+    color: var(--search-text-color);
   }
- .DocSearch-Button-Placeholder{
-   color:var(--search-text-color)
- }
+  .DocSearch-Button-Placeholder {
+    color: var(--search-text-color);
+  }
 }
-
-
 
 @media (max-width: 768px) {
   .DocSearch-Button-Keys {
@@ -83,17 +84,24 @@
     width: 32px !important;
     border-radius: 4px;
   }
-  .DocSearch-Button-Keys{
-    color:var(--search-text-color)
+  .DocSearch-Button-Keys {
+    color: var(--search-text-color);
   }
-  .DocSearch-Search-Icon{
-    color:var(--search-text-color)
+  .DocSearch-Search-Icon {
+    color: var(--search-text-color);
   }
- .DocSearch-Button-Placeholder{
-   color:var(--search-text-color)
- }
+  .DocSearch-Button-Placeholder {
+    color: var(--search-text-color);
+  }
 }
 .DocSearch-Button:hover {
   background-color: #6f98ef7f;
   transition: all 0.25s;
+}
+
+.logo {
+  // 放大两倍
+  transform: scale(2);
+  position: relative;
+  z-index: -1;
 }

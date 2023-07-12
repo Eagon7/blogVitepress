@@ -1,4 +1,4 @@
----
+<!-- ---
 # layout :  false
  layout: page 
 --- 
@@ -6,4 +6,4 @@
 import  team from './components/index.vue'
 </script>
 
-<team/>
+<team/> -->
