@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: mFont;
+  src: url("../docs/public/Lucida Handwriting Italic.ttf");
+}
+
 .Layout:has(.VPHome) {
   background-image: url("./public/cover@xl.webp");
   background-repeat: no-repeat;
