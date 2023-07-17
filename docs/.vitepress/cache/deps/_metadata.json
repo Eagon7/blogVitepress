@@ -1,17 +1,23 @@
 {
-  "hash": "1404dc99",
-  "browserHash": "b5d00d2e",
+  "hash": "6a105287",
+  "browserHash": "a8a6a6e2",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "c3968e34",
+      "fileHash": "422cb781",
       "needsInterop": false
     },
     "@vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "@vue_devtools-api.js",
-      "fileHash": "b0b9abb5",
+      "fileHash": "13d19fb7",
+      "needsInterop": false
+    },
+    "vanilla-tilt": {
+      "src": "../../../../node_modules/vanilla-tilt/lib/vanilla-tilt.es2015.js",
+      "file": "vanilla-tilt.js",
+      "fileHash": "23a2cd7d",
       "needsInterop": false
     }
   },

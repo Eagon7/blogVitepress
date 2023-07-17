@@ -15,11 +15,13 @@
     "vitepress-plugin-search": "^1.0.4-alpha.20"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "autoprefixer": "^10.4.14",
     "cal-heatmap": "4.2.0",
     "echarts": "^5.4.2",
     "postcss": "^8.4.24",
     "sass": "^1.62.1",
-    "tailwindcss": "^3.3.2"
+    "tailwindcss": "^3.3.2",
+    "vanilla-tilt": "^1.8.0"
   }
 }

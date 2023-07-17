@@ -12,14 +12,16 @@ hero:
       link: /articles/basic/
     - theme: alt
       text: View on Resume
-      link: /Resume/
+      link: /Resume/index
 
 ---
 <script setup>
 import home from './.vitepress/components/home.vue'
 import githubCalendat from './.vitepress/components/githubCalendar/index.vue'
 import team from './team/components/index.vue'
+
 </script>
+
 <home />
 <githubCalendat/>
 <team/>

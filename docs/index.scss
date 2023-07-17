@@ -43,6 +43,17 @@
   transition: border-color 0.25s;
   background: transparent;
 }
+.DocSearch-Button:hover {
+  background-color: #6f98ef7f;
+  transition: all 0.25s;
+}
+
+.logo {
+  // 放大两倍
+  transform: scale(2);
+  position: relative;
+  z-index: -1;
+}
 
 @media (min-width: 960px) {
   .title,
@@ -98,15 +109,4 @@
   .DocSearch-Button-Placeholder {
     color: var(--search-text-color);
   }
-}
-.DocSearch-Button:hover {
-  background-color: #6f98ef7f;
-  transition: all 0.25s;
-}
-
-.logo {
-  // 放大两倍
-  transform: scale(2);
-  position: relative;
-  z-index: -1;
 }
