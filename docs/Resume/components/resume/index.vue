@@ -1,11 +1,19 @@
 <script setup lang="ts">
 import VanillaTilt from "vanilla-tilt";
-import { ref, onMounted } from "vue";
+import { onBeforeUpdate, getCurrentInstance, watch, ref, onMounted } from "vue";
 
-const props = defineProps(["title", "num", "content"]);
-const card = ref(null);
+const props = defineProps(["title", "num", "content", "talo"]);
+const card = ref<HTMLElement | null>(null);
+const content = ref<HTMLElement | null>(null);
+const emits = defineEmits(["closeTalo"]);
+const animationEnd = () => {
+  if (content.value === null) return;
+  content.value.style.transform = "translateY(0)";
+  content.value.style.opacity = "1";
+};
 
 onMounted(() => {
+  console.log("mount");
   VanillaTilt.init(card.value as any, {
     max: 15,
     speed: 400,
@@ -16,14 +24,26 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="Ibasic">
-    <div class="container">
-      <div class="card" ref="card">
-        <div class="content">
+  <div class="Ibasic fixed top-0 right-0 z-50 bg-black/75">
+    <div
+      class="container animate__animated animate__fadeInRight"
+      @animationend="animationEnd"
+    >
+      <div class="card relative" ref="card">
+        <div
+          class="cursor-pointer absolute top-3 right-3 text-white z-50"
+          @click="emits('closeTalo')"
+        ></div>
+        <div class="content duration-100" ref="content">
           <h2>{{ props.num || "*" }}</h2>
-          <h3>{{ props.title || "无题" }}</h3>
-          <p>{{ props.content || "内容空空" }}</p>
-          <a href="#">Read More</a>
+          <h3 class="h-3">{{ props.title || "Hi~" }}</h3>
+          <p class="pt-5 font-bold" style="font-family: mFont">
+            {{
+              props.content ||
+              "If I never see you again, I wish you good morning, good afternoon, and good night"
+            }}
+          </p>
+          <a href="#" @click="emits('closeTalo')">close</a>
         </div>
       </div>
     </div>
@@ -69,10 +89,13 @@ onMounted(() => {
   opacity: 0;
   transition: 0.5s;
 }
+.h-3 {
+  font-family: mFont;
+}
 .container .card:hover .content {
   /* 鼠标移入，上移+显示 */
-  transform: translateY(0);
-  opacity: 1;
+  // transform: translateY(0);
+  // opacity: 1;
 }
 .container .card .content h2 {
   position: absolute;

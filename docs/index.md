@@ -15,20 +15,9 @@ hero:
       link: /Resume/index
 
 ---
-<script setup>
-import home from './.vitepress/components/home.vue'
-import githubCalendat from './.vitepress/components/githubCalendar/index.vue'
-import team from './team/components/index.vue'
 
+<script setup>
+import myIndex from './myIndex.vue'
 </script>
 
-<home />
-<githubCalendat/>
-<team/>
-
-<style lang="scss">
-
-@import './index.scss';
-@import './.vitepress/theme/custom.scss';
-@import './public/font.scss'
-</style>
+<myIndex/>

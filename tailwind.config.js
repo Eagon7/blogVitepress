@@ -8,7 +8,9 @@ module.exports = {
     "./docs/.vitepress/**/*.ts",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {},
+    },
   },
   plugins: [],
 };

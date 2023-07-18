@@ -54,8 +54,14 @@
   position: relative;
   z-index: -1;
 }
-
+.VPImage {
+  z-index: 10 !important;
+}
 @media (min-width: 960px) {
+  .VPNavBar.fill[data-v-cf6e7c5e]:not(.has-sidebar) {
+    // border-bottom-color: var(--vp-c-gutter);
+  }
+
   .title,
   .VPNavBarMenuGroup > button > span,
   .VPNavBarMenuLink {
